@@ -2,16 +2,17 @@
 
 This repository contains ready‑to‑run client examples in various programming languages, demonstrating how to interact with a [RustFS](https://github.com/rustfs/rustfs) server.
 
-> **RustFS** is a high‑performance storage server written in Rust. It exposes an HTTP API for file operations (create, read, write, delete, list).
+> **RustFS** is a high‑performance storage server written in Rust. It exposes an S3-compatible API and HTTP APIs for file operations.
 
 ## Supported Languages
 
-- **Python** (using `requests`)
-- **Go** (using `net/http`)
-- **Node.js** (using `fetch` / `axios`)
-- **Java** (using `OkHttp`)
-- **cURL** (command line)
-- *C++ / Rust / Ruby examples are coming soon*
+We provide examples for the following languages. Click on the respective links for detailed instructions and environment setup:
+
+- [**Java**](./java) (AWS S3 SDK, x-file-storage)
+- [**Go**](./go)
+- [**Python**](./python)
+- [**PHP**](./php)
+- [**Rust**](./rust)
 
 ## Quick Start
 
@@ -23,33 +24,31 @@ This repository contains ready‑to‑run client examples in various programming
    cd examples
    ```
 
-3. **Run an example** of your choice:
-    - Python: `python python/example.py`
-    - Go: `cd go && go run main.go`
-    - Node.js: `node nodejs/example.js`
-    - Java: `cd java && javac -cp okhttp-4.12.0.jar:. Example.java && java Example`
-    - cURL: `bash curl/example.sh`
-
-> See each language subdirectory for detailed instructions and environment setup.
+3. **Explore the examples**:
+   Navigate into the directory of your preferred language to find specific usage instructions, dependencies, and run commands.
+   
+   For instance, to view the Java examples:
+   ```bash
+   cd java
+   cat README.md
+   ```
 
 ## What Each Example Shows
 
-- Connecting to a RustFS server
-- Authenticating (if required)
-- Uploading a file (PUT /upload)
-- Downloading a file (GET /download)
-- Listing directory contents (GET /list)
-- Deleting a file (DELETE /delete)
+Depending on the specific language and project, the examples generally demonstrate:
+- Connecting to a RustFS server using S3-compatible clients or direct HTTP APIs.
+- Authenticating with the server.
+- Performing core file operations: Uploading, Downloading, Deleting, and Listing.
 
 ## Requirements
 
-- RustFS server v1.0+ (or compatible mock server)
-- Language‑specific runtime (Python 3.8+, Go 1.19+, Node.js 16+, Java 11+)
+- A running RustFS server v1.0+ (or a compatible mock server)
+- Language‑specific runtimes (e.g., Java 21+, Go 1.24+, Python 3.12+, PHP 8.4+, Rust Stable)
 
 ## Contributing
 
-Feel free to add examples in other languages or improve existing ones. Submit a pull request or open an issue.
+Contributions are welcome! Feel free to add examples in other languages or improve the existing ones. Simply submit a pull request or open an issue.
 
 ## License
 
-Apache 2.0 License 
+Apache 2.0 License
