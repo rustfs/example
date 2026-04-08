@@ -2,6 +2,11 @@
 
 This directory contains examples demonstrating how to interact with a [RustFS](https://github.com/rustfs/rustfs) server using Java.
 
+## Examples
+
+- **[AWS S3 Demo](./aws-s3-demo)**: Demonstrates how to use an S3-compatible client to interact with RustFS.
+- **[X-File-Storage RustFS](./x-file-storage-rustfs)**: Example using the x-file-storage framework to work with RustFS.
+
 ## Prerequisites
 
 - Java 11+
@@ -9,10 +14,4 @@ This directory contains examples demonstrating how to interact with a [RustFS](h
 
 ## Usage
 
-You can run the examples using your build tool (e.g., Maven, Gradle) or directly via `javac`/`java`. For example, if using a standalone file with OkHttp:
-
-```bash
-javac -cp okhttp-4.12.0.jar:. Example.java && java Example
-```
-
-*(Note: Adjust the compilation and execution commands based on the exact structure and dependencies of the Java examples provided.)*
+Please navigate into the specific example directories above for detailed instructions on how to build and run them (e.g., using Maven or Gradle).
