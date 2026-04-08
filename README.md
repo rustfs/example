@@ -52,4 +52,4 @@ Feel free to add examples in other languages or improve existing ones. Submit a 
 
 ## License
 
-Apache2.0 License (or match your project's license)
+Apache2.0 License 
